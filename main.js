@@ -1,22 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const saibaMaisButton = document.getElementById('saiba-mais');
-    const voltarButton = document.getElementById('voltar');
-    const saibaMaisSection = document.getElementById('saiba-mais-section');
-    const inicioSection = document.getElementById('inicio');
-    
-    // Função para mostrar a seção "Saiba Mais" e ocultar a seção inicial
-    function showSaibaMais() {
-        inicioSection.classList.add('hidden');
-        saibaMaisSection.classList.remove('hidden');
+    const links = document.querySelectorAll('header nav a');
+    const sections = document.querySelectorAll('section');
+
+    function updateActiveLink() {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        links.forEach((link) => link.classList.remove('active'));
+        links[index].classList.add('active');
     }
 
-    // Função para voltar para a seção inicial e ocultar a seção "Saiba Mais"
-    function hideSaibaMais() {
-        saibaMaisSection.classList.add('hidden');
-        inicioSection.classList.remove('hidden');
-    }
-
-    // Adiciona eventos de clique aos botões
-    saibaMaisButton.addEventListener('click', showSaibaMais);
-    voltarButton.addEventListener('click', hideSaibaMais);
+    updateActiveLink();
+    window.addEventListener('scroll', updateActiveLink);
 });
