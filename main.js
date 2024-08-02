@@ -19,12 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona eventos de clique aos botões
     saibaMaisButton.addEventListener('click', showSaibaMais);
     voltarButton.addEventListener('click', hideSaibaMais);
-
-    // ScrollReveal para animar as seções
-    ScrollReveal().reveal('.content-section', {
-        distance: '50px',
-        duration: 1500,
-        delay: 300,
-        easing: 'ease-in-out'
-    });
 });
