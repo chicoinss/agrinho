@@ -2,29 +2,51 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e0f7ff; /* Azul claro */
 }
 
-.l-header {
-    background-color: #333;
+header {
+    background-color: #005b99; /* Azul escuro */
     color: #fff;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav__logo {
+header .logo {
     font-size: 2rem;
 }
 
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #b3e5ff;
+}
+
 .content-section {
-    padding: 2rem;
+    padding: 5rem 2rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
 
 .home {
     text-align: center;
-    background-color: #e0ffe0;
+    background-color: #b3e5ff; /* Azul mais claro */
     padding: 4rem 2rem;
 }
 
@@ -34,20 +56,6 @@ body {
 
 .home__subtitle {
     font-size: 1.5rem;
-}
-
-.button {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 0.5rem;
-}
-
-.hidden {
-    display: none;
 }
 
 .section-title {
@@ -79,5 +87,5 @@ blockquote {
     font-style: italic;
     margin: 1rem 0;
     padding: 0.5rem;
-    border-left: 2px solid #4caf50;
+    border-left: 2px solid #005b99; /* Azul escuro */
 }
