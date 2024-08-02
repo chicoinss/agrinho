@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.l-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav__logo {
+    font-size: 2rem;
+}
+
+.content-section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.home {
+    text-align: center;
+    background-color: #e0ffe0;
+    padding: 4rem 2rem;
+}
+
+.home__title {
+    font-size: 3rem;
+}
+
+.home__subtitle {
+    font-size: 1.5rem;
+}
+
+.button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-left: 2px solid #4caf50;
+}
